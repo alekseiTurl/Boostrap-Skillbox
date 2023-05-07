@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skilbox Курсы 3D моделирования</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header header-container">
+        <div class="container">
+            <div class="row  align-items-center header__row">
+                <a href="#" class="header__logo col-lg-3 col-md-4 col-sm-12 col-2"><svg width="94" height="21" viewbox="0 0 94 21"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M13.123 14.968C13.123 18.266 10.506 20.658 6.348 20.658C5.15335 20.6242 3.97725 20.3539 2.88767 19.8628C1.79808 19.3717 0.816623 18.6696 0 17.797L1.39 16.255C2.692 17.498 4.223 18.706 6.32 18.706C8.65 18.706 11.161 17.396 11.161 15.042C11.161 13.087 9.613 11.812 6.359 10.807C2.651 9.67 0.77 8.128 0.77 5.227C0.768 2.356 3.188 0 6.64 0C9.217 0 10.83 1.102 12.399 2.51L11.032 4.033C9.656 2.81 8.345 1.981 6.736 1.981C4.74 1.98 2.77 3.272 2.77 5.13C2.77 6.814 3.734 7.887 7.14 8.933C10.26 9.897 13.123 11.391 13.123 14.966V14.968ZM29.948 1.898C29.948 2.802 30.678 3.536 31.579 3.536C32.012 3.536 32.427 3.363 32.733 3.056C32.9607 2.82686 33.1157 2.53556 33.1785 2.21867C33.2412 1.90178 33.209 1.5734 33.0859 1.27475C32.9627 0.976093 32.7541 0.720464 32.4862 0.539936C32.2183 0.359408 31.903 0.262022 31.58 0.26C30.679 0.26 29.949 0.993 29.949 1.898H29.948ZM50.328 19.676C50.328 19.676 51.538 20.663 55.572 20.663L55.57 20.662C59.552 20.662 62.784 17.74 62.784 13.747C62.784 9.755 59.554 6.844 55.572 6.844C54.442 6.814 53.322 7.044 52.294 7.517V0.599H50.328V19.676ZM65.087 13.767C65.087 17.761 68.313 21 72.294 21C76.275 21 79.503 17.762 79.504 13.768C79.504 9.774 76.276 6.536 72.295 6.536C68.315 6.536 65.087 9.773 65.087 13.767ZM91.433 20.337H94L88.324 13.553L93.617 7.191H91.065L87.045 12.023L83.004 7.191H80.437L85.768 13.561L80.132 20.337H82.683L87.047 15.092L91.433 20.337ZM72.313 8.49C71.2737 8.49068 70.2579 8.79991 69.3945 9.3785C68.531 9.95708 67.8588 10.779 67.463 11.74C67.0655 12.7023 66.9613 13.7606 67.1636 14.7819C67.3659 15.8032 67.8657 16.7419 68.6 17.48C69.3326 18.2162 70.2677 18.7179 71.2863 18.9213C72.3048 19.1246 73.3608 19.0204 74.32 18.622C75.2803 18.2216 76.1004 17.5458 76.6771 16.6798C77.2537 15.8138 77.5609 14.7964 77.56 13.756C77.56 10.848 75.21 8.49 72.312 8.49H72.313ZM55.583 8.823C54.4076 8.83931 53.2646 9.21055 52.304 9.888V18.033C53.3222 18.5296 54.451 18.7562 55.582 18.691C58.478 18.691 60.827 16.661 60.827 13.757C60.827 10.853 58.476 8.822 55.58 8.822H55.582L55.583 8.823ZM45.748 0.6H43.781V20.334H45.748V0.6ZM37.231 0.6H39.198V20.334H37.231V0.6ZM18.209 13.44L18.203 13.434L18.209 13.428V13.44ZM18.209 20.334V13.44L25.082 20.337H27.863L20.983 13.434L27.212 7.181H24.43L18.208 13.428V0.6H16.241V20.334H18.208H18.209ZM30.666 20.337H32.632V7.181H30.666V20.337Z"
+              fill="white" />
+          </svg>
+        </a>
+                <nav class="header__nav col-lg-9 col-md-8">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Главная</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">О&nbsp;нас</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Преподователи</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Курсы</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="burger-menu" id="burger-menu">
+                    <button class="burger-menu__exit" aria-label="закрыть меню" id="burger-exit"><svg width="30" height="30" viewbox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 6.75002C6.94891 6.55111 7.2187 6.43936 7.5 6.43936C7.7813 6.43936 8.05109 6.55111 8.25 6.75002L23.25 21.75C23.4489 21.9489 23.5606 22.2187 23.5606 22.5C23.5606 22.7813 23.4489 23.0511 23.25 23.25C23.0511 23.4489 22.7813 23.5607 22.5 23.5607C22.2187 23.5607 21.9489 23.4489 21.75 23.25L6.75 8.25002C6.55109 8.05111 6.43934 7.78132 6.43934 7.50002C6.43934 7.21871 6.55109 6.94893 6.75 6.75002Z" fill="white"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.25 6.75002C23.4489 6.94893 23.5607 7.21871 23.5607 7.50002C23.5607 7.78132 23.4489 8.0511 23.25 8.25001L8.25001 23.25C8.0511 23.4489 7.78132 23.5607 7.50001 23.5607C7.21871 23.5607 6.94893 23.4489 6.75002 23.25C6.55111 23.0511 6.43936 22.7813 6.43936 22.5C6.43936 22.2187 6.5511 21.9489 6.75002 21.75L21.75 6.75002C21.9489 6.5511 22.2187 6.43936 22.5 6.43936C22.7813 6.43936 23.0511 6.5511 23.25 6.75002Z" fill="white"/>
+    </svg>
+    </button>
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item"> <a href="#" class="burger-menu__link">Главная</a> </li>
+                        <li class="burger-menu__item"><a href="#" class="burger-menu__link">О нас</a></li>
+                        <li class="burger-menu__item"><a href="#" class="burger-menu__link">Преподаватели</a></li>
+                        <li class="burger-menu__item"><a href="#" class="burger-menu__link">Курсы</a></li>
+                    </ul>
+                </nav>
+                <button aria-label="меню" id="burger" class="header__burger-menu-btn col-2"><svg width="30" height="30" viewbox="0 0 30 30" fill="none"
+xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+d="M4.6875 21.5625C4.6875 21.3139 4.78627 21.0754 4.96209 20.8996C5.1379 20.7238 5.37636 20.625 5.625 20.625H24.375C24.6236 20.625 24.8621 20.7238 25.0379 20.8996C25.2137 21.0754 25.3125 21.3139 25.3125 21.5625C25.3125 21.8111 25.2137 22.0496 25.0379 22.2254C24.8621 22.4012 24.6236 22.5 24.375 22.5H5.625C5.37636 22.5 5.1379 22.4012 4.96209 22.2254C4.78627 22.0496 4.6875 21.8111 4.6875 21.5625ZM4.6875 14.0625C4.6875 13.8139 4.78627 13.5754 4.96209 13.3996C5.1379 13.2238 5.37636 13.125 5.625 13.125H24.375C24.6236 13.125 24.8621 13.2238 25.0379 13.3996C25.2137 13.5754 25.3125 13.8139 25.3125 14.0625C25.3125 14.3111 25.2137 14.5496 25.0379 14.7254C24.8621 14.9012 24.6236 15 24.375 15H5.625C5.37636 15 5.1379 14.9012 4.96209 14.7254C4.78627 14.5496 4.6875 14.3111 4.6875 14.0625ZM4.6875 6.5625C4.6875 6.31386 4.78627 6.0754 4.96209 5.89959C5.1379 5.72377 5.37636 5.625 5.625 5.625H24.375C24.6236 5.625 24.8621 5.72377 25.0379 5.89959C25.2137 6.0754 25.3125 6.31386 25.3125 6.5625C25.3125 6.81114 25.2137 7.0496 25.0379 7.22541C24.8621 7.40123 24.6236 7.5 24.375 7.5H5.625C5.37636 7.5 5.1379 7.40123 4.96209 7.22541C4.78627 7.0496 4.6875 6.81114 4.6875 6.5625Z"
+fill="white" />
+</svg>
+</button>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="row hero__row">
+                <div class="hero__content col-lg-5 col-md-6 col-sm-8">
+                    <h1 class="hero__heading">Курсы 3D моделирования</h1>
+                    <p class="hero__description">Следует отметить, что существующая теория способствует повышению качества&nbsp;благоприятных перспектив. Не следует, однако, забывать.</p>
+                    <button class="hero__btn btn">Выбрать курс</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="advantage">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-12 col-12">
+                    <div class="advantage__main-contetn">
+                        <h2 class="section-heading advantage__heading">Преимущества обучения в skillbox</h2>
+                        <p class="advantage__description">Имеется спорная точка зрения, гласящая примерно следующее: акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут рассмотрены исключительно в разрезе
+                            маркетинговых предпосылок.</p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="row advantage__card-list">
+                <li class="col-12 col-lg-4 col-md-4 col-sm-4 advantage__card-item  ">
+                    <div class="advantage__card-content  advantage__card-content_background-1">Результат вашего обучения является самым важным для нас приоритетом</div>
+                </li>
+                <li class="col-12 col-lg-4 col-md-4 col-sm-4 advantage__card-item  ">
+                    <div class="advantage__card-content  advantage__card-content_background-2">Лично познакомитесь с одним из своих будущих преподавателей
+                    </div>
+                </li>
+                <li class="col-12 col-lg-4 col-md-4 col-sm-4 advantage__card-item  ">
+                    <div class="advantage__card-content  advantage__card-content_background-3">Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным</div>
+                </li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section class="teachers">
+
+        <div class="container">
+            <h2 class="section-heading teachers__heading">Преподаватели курсов</h2>
+            <ul class="row teachers__list">
+                <li class="col-lg-3 col-md-6 col-sm-6  teachers__list-item">
+                    <div class="teachers__teachers-card">
+                        <picture class="teachers-card-pic">
+
+                            <source srcset="img/teach1-s.jpg" media="(max-width: 575px)">
+                            <source srcset="img/teach1-sm.jpg" media="(max-width: 576px)">
+                            <source srcset="img/teach1-md.jpg" media="(max-width: 991px)">
+
+                            <img src="img/teach1.jpg" alt="Владимир Петров" class="teachers-card-photo">
+                        </picture>
+                        <h3 class="teachers-card-name">Владимир Петров</h3>
+                        <p class="teachers-card-cite">Лишь непосредственные участники технического прогресса неоднозначны и будут в равной степени предоставлены&nbsp;сами себе.</p>
+                    </div>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-6  teachers__list-item">
+                    <div class="teachers__teachers-card">
+                        <picture class="teachers-card-pic">
+                            <source srcset="img/teach2-s.jpg" media="(max-width: 575px)">
+                            <source srcset="img/teach2-sm.jpg" media="(max-width: 576px)">
+                            <source srcset="img/teach2-md.jpg" media="(max-width:991px)">
+                            <img src="img/teach2.jpg" alt="Денис Сергеев" class="teachers-card-photo">
+                        </picture>
+                        <h3 class="teachers-card-name">Денис Сергеев</h3>
+                        <p class="teachers-card-cite">Безусловно, разбавленное изрядной долей эмпатии, рациональное мышление.</p>
+                    </div>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-6  teachers__list-item">
+                    <div class="teachers__teachers-card">
+                        <picture class="teachers-card-pic">
+                            <source srcset="img/teach3-s.jpg" media="(max-width: 575px)">
+                            <source srcset="img/teach3-sm.jpg" media="(max-width: 576px)">
+                            <source srcset="img/teach3-md.jpg" media="(max-width:991px)">
+                            <img src="img/teach3.jpg" alt="Михаил Андреев" class="teachers-card-photo">
+                        </picture>
+                        <h3 class="teachers-card-name">Михаил Андреев</h3>
+                        <p class="teachers-card-cite">Ясность нашей позиции очевидна: высокое качество позиционных исследований напрямую зависит от вывода.</p>
+                    </div>
+                </li>
+                <li class="col-lg-3 col-md-6 col-sm-6  teachers__list-item">
+                    <div class="teachers__teachers-card">
+                        <picture class="teachers-card-pic">
+                            <source srcset="img/teach4-s.jpg" media="(max-width: 575px)">
+                            <source srcset="img/teach4-sm.jpg" media="(max-width: 576px)">
+                            <source srcset="img/teach4-md.jpg" media="(max-width:991px)">
+
+                            <img src="img/teach4.jpg" alt="Константин Дмитриев" class="teachers-card-photo">
+                        </picture>
+                        <h3 class="teachers-card-name">Константин Дмитриев</h3>
+                        <p class="teachers-card-cite">Мы вынуждены отталкиваться от того, что существующая теория, в своём классическом представлении.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="courses">
+        <div class="container">
+            <h2 class="section-heading courses__heading">Курсы</h2>
+            <ul class="row courses__card-list">
+                <li class="col-12 col-sm-6 courses__card-list__item">
+                    <div class="courses__card courses__card-background-1 ">
+                        <div class="courses__card-text">
+
+                            <h3 class="courses__card-heading">Cinema 4d для начинающих</h3>
+                            <p class="courses__card-description">Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит от стандартных подходов.</p>
+                        </div>
+
+                        <button class="btn courses__card-btn">Подробнее</button>
+                        <span class="courses__card-timesticker"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                  fill="white" />
+                <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="white" />
+              </svg> 60 часов
+            </span>
+                    </div>
+                </li>
+                <li class="col-12 col-sm-6 courses__card-list__item">
+                    <div class="courses__card courses__card-background-2">
+                        <div class="courses__card-text">
+                            <h3 class="courses__card-heading">Blender:&nbsp;продвинутый уровень</h3>
+                            <p class="courses__card-description">Но убеждённость некоторых оппонентов в значительной степени обусловливает важность форм воздействия. Внезапно, тщательные исследования конкурентов представлены.</p>
+                        </div>
+
+                        <button class="btn courses__card-btn">Подробнее</button>
+                        <span class="courses__card-timesticker"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                  fill="white" />
+                <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="white" />
+              </svg> 40 часов
+            </span>
+                    </div>
+                </li>
+                <li class="col-12 col-sm-6 col-md-6 courses__card-list__item">
+                    <div class="courses__card courses__card-background-3">
+                        <div class="courses__card-text">
+                            <h3 class="courses__card-heading">Визуализация в 3ds Max</h3>
+                            <p class="courses__card-description">Повседневная практика показывает, что сложившаяся структура организации обеспечивает актуальность кластеризации усилий.</p>
+                        </div>
+
+                        <button class="btn courses__card-btn">Подробнее</button>
+                        <span class="courses__card-timesticker"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                  fill="white" />
+                <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="white" />
+              </svg> 40 часов
+            </span>
+                    </div>
+                </li>
+                <li class="col-12 col-sm-6 courses__card-list__item">
+                    <div class="courses__card courses__card-background-4">
+                        <div class="courses__card-text">
+                            <h3 class="courses__card-heading">Скульптинг в ZBrush</h3>
+                            <p class="courses__card-description">Разнообразный и богатый опыт говорит нам, что граница обучения кадров требует определения и уточнения прогресса профессионального сообщества! В частности, постоянный количественный рост и сфера нашей активности.</p>
+                        </div>
+
+                        <button class="btn courses__card-btn">Подробнее</button>
+                        <span class="courses__card-timesticker"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z"
+                  fill="white" />
+                <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="white" />
+              </svg> 80 часов
+            </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="container ">
+            <div class="row justify-content-center">
+                <ul class="col-12  footer__social-list">
+
+                    <li class="footer__social-item "> <a href="#" class="col1 footer__social-link"><svg width="24" height="24"
+                viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.402 21V14.034H17.735L18.084 11.326H15.402V9.598C15.402 8.814 15.62 8.279 16.744 8.279H18.178V5.857C17.4838 5.78334 16.7861 5.74762 16.088 5.75C14.021 5.75 12.606 7.012 12.606 9.33V11.326H10.268V14.034H12.606V21H4C3.73478 21 3.48043 20.8946 3.29289 20.7071C3.10536 20.5196 3 20.2652 3 20V4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H20C20.2652 3 20.5196 3.10536 20.7071 3.29289C20.8946 3.48043 21 3.73478 21 4V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21H15.402Z"
+                  fill="white" />
+              </svg>
+            </a></li>
+                    <li class="footer__social-item "> <a href="#" class="col1 footer__social-link"><svg width="24" height="24"
+                viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22.1621 5.65593C21.3986 5.99362 20.589 6.2154 19.7601 6.31393C20.6338 5.79136 21.2878 4.96894 21.6001 3.99993C20.7801 4.48793 19.8811 4.82993 18.9441 5.01493C18.3147 4.34151 17.4804 3.89489 16.571 3.74451C15.6616 3.59413 14.728 3.74842 13.9153 4.18338C13.1026 4.61834 12.4564 5.30961 12.0772 6.14972C11.6979 6.98983 11.6068 7.93171 11.8181 8.82893C10.1552 8.74558 8.52838 8.31345 7.04334 7.56059C5.55829 6.80773 4.24818 5.75097 3.19805 4.45893C2.82634 5.09738 2.63101 5.82315 2.63205 6.56193C2.63205 8.01193 3.37005 9.29293 4.49205 10.0429C3.82806 10.022 3.17869 9.84271 2.59805 9.51993V9.57193C2.59825 10.5376 2.93242 11.4735 3.5439 12.221C4.15538 12.9684 5.00653 13.4814 5.95305 13.6729C5.33667 13.84 4.69036 13.8646 4.06305 13.7449C4.32992 14.5762 4.85006 15.3031 5.55064 15.824C6.25123 16.3449 7.09718 16.6337 7.97005 16.6499C7.10253 17.3313 6.10923 17.8349 5.04693 18.1321C3.98464 18.4293 2.87418 18.5142 1.77905 18.3819C3.69075 19.6114 5.91615 20.264 8.18905 20.2619C15.8821 20.2619 20.0891 13.8889 20.0891 8.36193C20.0891 8.18193 20.0841 7.99993 20.0761 7.82193C20.8949 7.23009 21.6017 6.49695 22.1631 5.65693L22.1621 5.65593Z"
+                  fill="white" />
+              </svg>
+            </a></li>
+                    <li class="footer__social-item "> <a href="#" class="col1 footer__social-link"><svg width="24" height="24"
+                viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z"
+                  fill="white" />
+              </svg>
+            </a></li>
+                    <li class="footer__social-item ">
+                        <a href="#" class="col1 footer__social-link"><svg width="24" height="24" viewbox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21.543 6.498C22 8.28 22 12 22 12C22 12 22 15.72 21.543 17.502C21.289 18.487 20.546 19.262 19.605 19.524C17.896 20 12 20 12 20C12 20 6.107 20 4.395 19.524C3.45 19.258 2.708 18.484 2.457 17.502C2 15.72 2 12 2 12C2 12 2 8.28 2.457 6.498C2.711 5.513 3.454 4.738 4.395 4.476C6.107 4 12 4 12 4C12 4 17.896 4 19.605 4.476C20.55 4.742 21.292 5.516 21.543 6.498ZM10 15.5L16 12L10 8.5V15.5Z"
+                  fill="white" />
+              </svg>
+            </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copiryght">SKILLBOX ® 2021</p>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

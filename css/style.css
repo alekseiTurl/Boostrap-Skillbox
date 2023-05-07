@@ -1,0 +1,771 @@
+        @font-face {
+            font-family: 'Roboto';
+            src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Roboto';
+            src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        *,
+        *:after,
+        *:before {
+            box-sizing: inherit;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #FFF;
+            color: #333333;
+        }
+
+         :root {
+            --color-blue: #3F2AFF;
+            --color-dark-blue: #212133;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        b {
+            color: #000000;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        .btn {
+            text-align: center;
+            padding: 24px 75.5px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            background: var(--color-blue);
+            border-radius: 20px;
+            cursor: pointer;
+            border: none;
+            transition: transform, opacity 0.15s ease
+        }
+
+        .section-heading {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 100%;
+            color: #2E2B44;
+        }
+        /* header */
+
+        .header-container {
+            background: var(--color-blue);
+        }
+
+        .header__row {
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }
+
+        .header__nav-list {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .header__nav-link {
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            transition-property: opacity, border-bottom, color;
+            transition-duration: 0.15s;
+            transition-timing-function: ease;
+        }
+
+        .header__nav-item:not(:last-child) {
+            margin-right: 55px;
+        }
+
+        .burger-menu {
+            padding: 30px 15px 100px 15px;
+            background-color: #2F2C45;
+            width: 100%;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            transform: translateY(-101%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .is-active {
+            display: block;
+            transform: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .header__burger-menu-btn {
+            display: none;
+        }
+
+        .burger-menu__exit {
+            margin-left: auto;
+            display: block;
+            background: transparent;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        .burger-menu__list {
+            width: 100%;
+        }
+
+        .burger-menu__item:not(:last-child) {
+            margin-bottom: 55px;
+        }
+
+        .burger-menu__link {
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+        /* hero */
+
+        .hero {
+            background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, var(--color-dark-blue) 100%);
+            margin-bottom: 80px;
+        }
+
+        .hero__row {
+            padding: 130px 0 130px 0;
+            background-image: url(../img/hero-bg.png);
+            background-repeat: no-repeat;
+            background-size: 632px 593px;
+            background-position: top 16px right 16px;
+        }
+
+        .hero__heading {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 100%;
+            color: #FFFFFF;
+            margin-bottom: 29px;
+        }
+
+        .hero__description {
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 63px;
+        }
+        /* advantage */
+
+        .advantage__heading {
+            margin-bottom: 16px;
+            max-width: 370px;
+        }
+
+        .advantage__description {
+            font-size: 16px;
+            line-height: 148%;
+            color: #666666;
+        }
+
+        .advantage__main-contetn {
+            background-image: url(../img/advanatge-main-bg.png);
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: 160px 142px;
+            padding-left: 190px;
+            margin-bottom: 20px;
+        }
+
+        .advantage__card-content {
+            padding-left: 110px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 120%;
+            color: #666666;
+        }
+
+        .advantage__card-content_background-1 {
+            background-image: url(../img/advantage-card1.svg);
+            background-repeat: no-repeat;
+        }
+
+        .advantage__card-content_background-2 {
+            background-image: url(../img/advantage-card2.svg);
+            background-repeat: no-repeat;
+        }
+
+        .advantage__card-content_background-3 {
+            background-image: url(../img/advantage-card3.svg);
+            background-repeat: no-repeat;
+        }
+
+        .advantage {
+            margin-bottom: 80px;
+        }
+        /* teachers */
+
+        .teachers {
+            padding-top: 68px;
+            padding-bottom: 80px;
+            background: var(--color-dark-blue);
+        }
+
+        .teachers__heading {
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        .teachers-card-photo {
+            border-radius: 23px 23px 0px 0px;
+            margin-bottom: 27px;
+        }
+
+        .teachers-card-name {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 150%;
+            color: #FFFFFF;
+            margin-bottom: 7px;
+        }
+
+        .teachers-card-cite {
+            font-size: 16px;
+            line-height: 150%;
+            color: #85859B;
+        }
+        /* courses */
+
+        .courses {
+            padding-top: 67px;
+            padding-bottom: 48px;
+        }
+
+        .courses__heading {
+            margin-bottom: 25px;
+        }
+
+        .courses__card {
+            position: relative;
+            padding: 30px;
+            padding-top: 210px;
+            background: #EDF0F9;
+            border-radius: 0px 0px 20px 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .courses__card-list__item {
+            margin-bottom: 31px;
+        }
+
+        .courses__card-background-1 {
+            background-image: url(../img/courses-card1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .courses__card-background-2 {
+            background-image: url(../img/courses-card2.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .courses__card-background-3 {
+            background-image: url(../img/courses-card3.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .courses__card-background-4 {
+            background-image: url(../img/courses-card4.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .courses__card-heading {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--color-dark-blue);
+            margin-bottom: 7px;
+        }
+
+        .courses__card-description {
+            font-size: 16px;
+            line-height: 150%;
+            color: #666666;
+        }
+
+        .courses__card-text {
+            margin-bottom: 50px;
+        }
+
+        .courses__card-btn {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 20.5px 59px;
+            max-width: 202px;
+        }
+
+        .courses__card-timesticker {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            top: 10px;
+            right: 5px;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+
+        .courses__card-timesticker svg {
+            margin-right: 5px;
+        }
+        /* footer */
+
+        .footer {
+            background: #2E2B44;
+        }
+
+        .footer__social-list {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer__social-item:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        .footer__social-link svg path {
+            transition: fill 0.15s ease
+        }
+
+        .footer__social-item {
+            padding: 30px 0;
+        }
+
+        .footer__copiryght {
+            display: block;
+            text-align: center;
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #2E2B44;
+            background-color: #fff;
+        }
+        /*   conditions */
+
+        .header__nav-link:hover {
+            opacity: 0.8;
+            border-bottom: 1px solid #fff;
+            margin-bottom: -2px;
+        }
+
+        .header__nav-link:active {
+            color: var(--color-dark-blue);
+            border-bottom: 1px solid var(--color-dark-blue);
+            outline: none;
+        }
+
+        *:focus {
+            outline: 1px solid #fff;
+            outline-offset: 3px;
+        }
+
+        .courses__card-btn:focus-within {
+            outline: 1px solid var(--color-dark-blue);
+            outline-offset: 3px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .btn:active {
+            transform: scale(0.99);
+            outline: none;
+            opacity: 1;
+        }
+
+        .footer__social-link:hover svg path {
+            fill: var(--color-blue);
+        }
+
+        .footer__social-link:active svg path {
+            fill: rgb(148, 15, 224);
+        }
+
+        .header__burger-menu-btn:hover svg path {
+            fill: var(--color-dark-blue);
+        }
+
+        .header__burger-menu-btn:active svg path {
+            fill: rgb(148, 15, 224);
+        }
+
+        .burger-menu__exit:hover svg path {
+            fill: var(--color-blue);
+        }
+
+        .burger-menu__exit:active svg path {
+            fill: rgb(148, 15, 224);
+        }
+
+        .burger-menu__link:hover {
+            margin-bottom: -1px;
+            border-bottom: 1px solid #fff;
+        }
+        /* media */
+
+        @media(max-width:1199px) {
+            .courses__card-background-1 {
+                background-image: url(../img/courses-card1-md.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .courses__card-background-2 {
+                background-image: url(../img/courses-card2-md.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .courses__card-background-3 {
+                background-image: url(../img/courses-card3-md.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .courses__card-background-4 {
+                background-image: url(../img/courses-card4-md.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .courses__card {
+                padding-top: 260px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero__row {
+                background-size: 50%;
+                background-position: top 45% right 5%;
+            }
+            .courses__card-text {
+                margin-bottom: 40px;
+            }
+            .courses__card {
+                padding-top: 200px;
+            }
+            .advantage__card-content_background-1 {
+                background-position: top 5px left;
+            }
+            .advantage__card-content_background-2 {
+                background-position: top 5px left;
+            }
+            .advantage__card-content_background-3 {
+                background-position: top 5px left;
+            }
+            .advantage__card-content {
+                padding: 0;
+                padding-top: 95px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero__heading {
+                font-size: 50px;
+                line-height: 100%;
+                margin-bottom: 18px;
+            }
+            .advantage__main-contetn {
+                padding-left: 240px;
+                background-size: 211px 187px;
+            }
+            .advantage__heading {
+                margin-bottom: 21px;
+            }
+            .teachers {
+                padding-bottom: 30px;
+            }
+            .teachers__list-item {
+                margin-bottom: 24px;
+            }
+            .courses__card {
+                padding-top: 210px;
+            }
+            .courses__card-btn {
+                max-width: 195px;
+            }
+            .courses__card-timesticker {
+                right: 10px;
+            }
+            .courses__card-text {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media(max-width:767px) {
+            .header__logo {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .header__nav-list {
+                justify-content: center;
+            }
+            .courses__card-text {
+                margin-bottom: 40px;
+            }
+            .courses__card {
+                padding-top: 160px;
+            }
+        }
+
+        @media(max-width: 576px) {
+            .courses__card {
+                padding-top: 210px;
+            }
+            .header__logo {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .header__nav-list {
+                justify-content: center;
+            }
+            .hero__heading {
+                font-size: 50px;
+            }
+            .hero__row {
+                padding-top: 80px;
+            }
+            .advantage {
+                padding-top: 0;
+            }
+            .advantage__main-contetn {
+                padding-left: 180px;
+                background-size: 150px 134px;
+                background-position: top left;
+            }
+            .teachers {
+                padding-top: 48px;
+            }
+            .courses {
+                padding-top: 92px;
+            }
+            .courses__card-background-1 {
+                background-image: url(../img/courses-card1-sm.jpg);
+            }
+            .courses__card-background-2 {
+                background-image: url(../img/courses-card2-sm.jpg);
+            }
+            .courses__card-background-3 {
+                background-image: url(../img/courses-card3-sm.jpg);
+            }
+            .courses__card-background-4 {
+                background-image: url(../img/courses-card4-sm.jpg);
+            }
+            .courses__card-heading {
+                line-height: 130%;
+            }
+            .courses__card-text {
+                margin-bottom: 35px;
+            }
+            .courses__card-btn {
+                padding: 20.5px 48px;
+            }
+            .hero__row {
+                background-image: none;
+            }
+        }
+        /**/
+
+        @media(max-width:575px) {
+            .courses__card {
+                padding-top: 345px;
+            }
+            .header__nav-list {
+                display: none;
+            }
+            .header__logo {
+                margin-bottom: 0;
+            }
+            .header__logo svg {
+                width: 71px;
+                height: 16px;
+            }
+            .header__burger-menu-btn {
+                display: inline-block;
+                background: transparent;
+                border: none;
+            }
+            .header__row {
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
+            .header__row {
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+            .advantage__card-content {
+                padding-bottom: 16px;
+                padding-left: 110px;
+                padding-top: 31px;
+            }
+            .advantage__card-item:not(:last-child) {
+                margin-bottom: 40px;
+            }
+            .advantage__main-contetn {
+                background-image: none;
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+            .section-heading {
+                font-size: 20px;
+                line-height: 130%;
+            }
+            .hero {
+                margin-bottom: 0;
+            }
+            .advantage__heading {
+                margin-bottom: 2px;
+            }
+            .teachers__teacher-card {
+                text-align: center;
+            }
+            .teachers-card-photo {
+                border-radius: 23px;
+            }
+            .courses {
+                padding-top: 36px;
+                padding-bottom: 15px;
+            }
+            .courses__card-background-1 {
+                background-image: url(../img/courses-card1-s.jpg);
+            }
+            .courses__card-background-2 {
+                background-image: url(../img/courses-card2-s.jpg);
+            }
+            .courses__card-background-3 {
+                background-image: url(../img/courses-card3-s.jpg);
+            }
+            .courses__card-background-4 {
+                background-image: url(../img/courses-card4-s.jpg);
+            }
+            .courses__card-text {
+                margin-bottom: 82px;
+            }
+            .card-list__item {
+                min-height: 653px;
+            }
+            .hero__heading {
+                font-size: 30px;
+                line-height: 100%;
+            }
+            .hero__description {
+                font-size: 16px;
+                line-height: 130%;
+                margin-bottom: 46px;
+            }
+            .hero__heading {
+                margin-bottom: 5px;
+            }
+            .hero__btn {
+                font-size: 16px;
+                line-height: 19px;
+                padding: 20.5px 53.5px;
+            }
+            .hero__row {
+                padding-top: 46px;
+            }
+            .advantage {
+                padding-top: 50px;
+                margin-bottom: 46px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .courses__card {
+                padding-top: 300px;
+            }
+        }
+
+        @media(max-width:420px) {
+            .courses__card {
+                padding-top: 250px;
+            }
+        }
+
+        @media(max-width:320px) {
+            .hero__row {
+                padding-top: 46px;
+            }
+            .hero__row {
+                background-image: none;
+                padding-bottom: 50px;
+            }
+            .teachers {
+                padding-top: 34px;
+            }
+            .teachers__teacher-card {
+                text-align: inherit;
+            }
+            .teachers-card-photo {
+                border-radius: 23px 23px 0px 0px;
+            }
+            .advantage__card-list {
+                flex-direction: column;
+            }
+            .advantage__card-content {
+                padding-top: 7px;
+                padding-left: 110px;
+            }
+            .advantage__card-item:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            .advantage {
+                padding-top: 50px;
+                margin-bottom: 46px;
+            }
+            .teacher-card-photo {
+                margin-bottom: 27px;
+            }
+            .courses__card {
+                padding-top: 210px;
+                min-height: 652px;
+            }
+        }
